@@ -28,6 +28,18 @@ Restart container
 docker start -i -a python-app
 ```
 
+Remove container
+
+```
+docker rm python-app
+```
+
+Remove image
+
+```
+docker rmi python-image
+```
+
 ### Node app
 
 Building image
@@ -52,4 +64,30 @@ Restart container
 
 ```
 docker start node-app
+```
+
+Remove container
+
+```
+docker rm python-app
+```
+
+Remove image
+
+```
+docker rmi node-image
+```
+
+### Generic
+
+Remove all untagged images
+
+```
+docker image prune
+```
+
+Remove all images including tagged ones
+
+```
+docker image prune -a
 ```
