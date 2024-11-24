@@ -40,6 +40,18 @@ Remove image
 docker rmi python-image
 ```
 
+Build image with tag
+
+```
+docker build -t bmi-app:1 .
+```
+
+Run container with 
+
+```
+docker run -it --name bmi-app --rm bmi-app:1
+```
+
 ### Node app
 
 Building image
@@ -76,6 +88,18 @@ Remove image
 
 ```
 docker rmi node-image
+```
+
+Build image with tag
+
+```
+docker build -t node-demo:latest .
+```
+
+Run container with auto remove after container stop
+
+```
+docker run -p 8000:3000 -d --name node-app --rm node-demo:latest
 ```
 
 ### Generic
