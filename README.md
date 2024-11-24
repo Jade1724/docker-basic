@@ -16,6 +16,18 @@ Running container
 docker run -it --name python-app python-image
 ```
 
+Stop container 
+
+```
+docker stop python-app
+```
+
+Restart container
+
+```
+docker start -i -a python-app
+```
+
 ### Node app
 
 Building image
@@ -36,4 +48,8 @@ Stop container
 docker stop node-app
 ```
 
+Restart container
 
+```
+docker start node-app
+```
