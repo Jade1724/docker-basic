@@ -115,3 +115,22 @@ Remove all images including tagged ones
 ```
 docker image prune -a
 ```
+
+Rename the name and tag of image.
+Renaming does not delete the original but it creates a clone with the new name. 
+
+```
+docker tag node-demo:latest harukaichinose/node-hello-world
+```
+
+Login to docker 
+
+```
+docker login
+```
+
+Push Docker image to Docker Hub
+
+```
+docker push harukaichinose/node-hello-world
+```
