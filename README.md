@@ -129,8 +129,15 @@ Login to docker
 docker login
 ```
 
-Push Docker image to Docker Hub
+Push Docker image to Docker Hub. This command only works if you are logged in to Docker. 
 
 ```
 docker push harukaichinose/node-hello-world
 ```
+
+Pull Docker image. This command works without being logged in. 
+
+```
+docker pull harukaichinose/node-hello-world
+```
+
