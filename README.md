@@ -130,14 +130,16 @@ docker login
 ```
 
 Push Docker image to Docker Hub. This command only works if you are logged in to Docker. 
+This will pull the latest image. 
 
 ```
 docker push harukaichinose/node-hello-world
 ```
 
 Pull Docker image. This command works without being logged in. 
+Without docker pull, if you docker run, and if the image does not exist locally, it will automatically pull image from Docker Hub. 
+If you already have image and run docker run, Docker does not check if the local image is the latest. Manual update required. 
 
 ```
 docker pull harukaichinose/node-hello-world
 ```
-
